@@ -12,6 +12,5 @@ public class AB {
 		System.out.println(A / B);
 
 		// System.out.println(scan.nextDouble()/scan.nextDouble());
-
 	}
 }
