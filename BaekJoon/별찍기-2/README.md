@@ -1,4 +1,4 @@
-# 문자열 반복 메서드 repeat()
+# 🚩문자열 반복 메서드 repeat()
 - String 문자열을 파라미터의 주어진 횟수만큼 반복함
 - 0 : 빈 문자열을 반환
 - -(음수) : IllegalArgumentExceptionthrow 에러를 반환
