@@ -15,6 +15,21 @@ System.out.println(str.charAt(2)-48); // 3 출력
 System.out.println(str.charAt(3)-'0'); // 4 출력
 ```
 
+## charAt() 사용 코드
+```java
+int[] cut = new int[10];
+
+String str = String.valueOf(result);
+
+for (int i = 0; i < str.length(); i++) {
+	cut[(str.charAt(i) - '0')]++;
+}
+
+for (int v : cut) {
+	System.out.println(v);
+}
+```
+
 ## 내가 짠 코드
 ```java
 Scanner scan = new Scanner(System.in);
@@ -33,20 +48,5 @@ while(result > 0) {
 
 for (int i = 0; i < cut.length; i++) {
 	System.out.println(cut[i]);
-}
-```
-
-## charAt() 사용 코드
-```java
-int[] cut = new int[10];
-
-String str = String.valueOf(result);
-
-for (int i = 0; i < str.length(); i++) {
-	cut[(str.charAt(i) - '0')]++;
-}
-
-for (int v : cut) {
-	System.out.println(v);
 }
 ```
