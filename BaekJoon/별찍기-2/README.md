@@ -16,6 +16,14 @@ public class Main {
 >> 결과 출력 HelloHelloHello
 ```
 
+
+## repeat() 사용 코드
+```java
+for (int i = 1; i <= num; i++) {
+	System.out.println(" ".repeat(num-i) + "*".repeat(i));
+}
+```
+
 ## 내가 짠 코드 - for문 사용
 ```java
 for(int i = 1; i <= num; i++){
@@ -24,11 +32,4 @@ for(int i = 1; i <= num; i++){
 	     for(int j = 1; j <= i; j++)
 		       System.out.print("*");
 	     System.out.println();
-```
-
-## repeat() 사용 코드
-```java
-for (int i = 1; i <= num; i++) {
-	System.out.println(" ".repeat(num-i) + "*".repeat(i));
-}
 ```
