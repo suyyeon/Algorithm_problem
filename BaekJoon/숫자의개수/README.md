@@ -17,36 +17,36 @@ System.out.println(str.charAt(3)-'0'); // 4 출력
 
 ## 내가 짠 코드
 ```java
-		Scanner scan = new Scanner(System.in);
-		int a = scan.nextInt();
-		int b = scan.nextInt();
-		int c = scan.nextInt();
-		scan.close();
+Scanner scan = new Scanner(System.in);
+int a = scan.nextInt();
+int b = scan.nextInt();
+int c = scan.nextInt();
+scan.close();
 
-		int result = a * b * c;
-		int[] cut = new int[10];
-		
-		while(result > 0) {
-			cut[result%10]++; 
-			result/=10; 
-		}
-		
-		for (int i = 0; i < cut.length; i++) {
-			System.out.println(cut[i]);
-		}
+int result = a * b * c;
+int[] cut = new int[10];
+
+while(result > 0) {
+	cut[result%10]++; 
+	result/=10; 
+}
+
+for (int i = 0; i < cut.length; i++) {
+	System.out.println(cut[i]);
+}
 ```
 
 ## charAt() 사용 코드
 ```java
-		int[] cut = new int[10];
-    
-    String str = String.valueOf(result);
+int[] cut = new int[10];
 
-		for (int i = 0; i < str.length(); i++) {
-			cut[(str.charAt(i) - '0')]++;
-		}
+String str = String.valueOf(result);
 
-		for (int v : cut) {
-			System.out.println(v);
-		}
+for (int i = 0; i < str.length(); i++) {
+	cut[(str.charAt(i) - '0')]++;
+}
+
+for (int v : cut) {
+	System.out.println(v);
+}
 ```
