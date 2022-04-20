@@ -8,10 +8,10 @@
 ```java
 public class Main {
 	public static void main(String[] args) throws Exception {
-		int input = System.in.read(); // 아스키코드
-    char a = (char)System.in.read(); // 문자 그대로
+		int a = System.in.read(); // 아스키코드
+   		char a = (char)System.in.read(); // 문자 그대로
 		int a = System.in.read()-48; // 숫자 그대로
-		System.out.println(input);
+		System.out.println(a);
 	}
 }
 ```
