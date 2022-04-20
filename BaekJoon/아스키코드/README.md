@@ -1,6 +1,6 @@
 # 🚩System.in.read()
 - 단, 하나의 문자를 입력받아 입력받은 문자의 아스키 코드를 반환함
-- 버퍼(InputStream)를 사용하기 때문에 효율적이며 throw(예외처리)를 필수적으로 해주어야 함
+- 버퍼(InputStream)를 사용하기 때문에 효율적이며 throws(예외처리)를 필수적으로 해주어야 함
 
 
 ## System.in.read() 사용 코드
