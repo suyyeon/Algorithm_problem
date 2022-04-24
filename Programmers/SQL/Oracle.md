@@ -59,3 +59,25 @@ SELECT animal_type, NVL(name,'No name') as "NAME", sex_upon_intake
 FROM animal_ins
 ORDER BY animal_id;
 ```
+
+# SUM, MAX, MIN
+### [최댓값 구하기](https://programmers.co.kr/learn/courses/30/lessons/59415)
+```sql
+SELECT max(datetime) as "시간"
+FROM animal_ins;
+```
+### [최솟값 구하기](https://programmers.co.kr/learn/courses/30/lessons/59415)
+```sql
+SELECT min(datetime) as "시간"
+FROM animal_ins;
+```
+### [동물 수 구하기](https://programmers.co.kr/learn/courses/30/lessons/59406)
+```sql
+SELECT count(animal_id) as "count"
+FROM animal_ins;
+```
+### [중복 제거하기](https://programmers.co.kr/learn/courses/30/lessons/59408)
+```sql
+SELECT count(distinct(name)) as "count"
+FROM animal_ins;
+```
