@@ -46,3 +46,16 @@ FROM animal_ins
 WHERE name is null
 ORDER BY animal_id;
 ```
+### [이름이 있는 동물의 아이디](https://programmers.co.kr/learn/courses/30/lessons/59407)
+```sql
+SELECT animal_id
+FROM animal_ins
+WHERE name is not null
+ORDER BY animal_id;
+```
+### [NULL 처리하기](https://programmers.co.kr/learn/courses/30/lessons/59410)
+```sql
+SELECT animal_type, NVL(name,'No name') as "NAME", sex_upon_intake
+FROM animal_ins
+ORDER BY animal_id;
+```
