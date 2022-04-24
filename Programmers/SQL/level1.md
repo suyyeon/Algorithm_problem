@@ -37,3 +37,12 @@ SELECT animal_id, name, datetime
 FROM animal_ins
 ORDER BY name, datetime desc;
 ```
+
+# IS NULL
+### [이름이 없는 동물의 아이디](https://programmers.co.kr/learn/courses/30/lessons/59039)
+```sql
+SELECT animal_id
+FROM animal_ins
+WHERE name is null
+ORDER BY animal_id;
+```
