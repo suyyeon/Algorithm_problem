@@ -81,3 +81,12 @@ FROM animal_ins;
 SELECT count(distinct(name)) as "count"
 FROM animal_ins;
 ```
+
+# String, Date
+### [루시와 엘라 찾기](https://programmers.co.kr/learn/courses/30/lessons/59046)
+```sql
+SELECT animal_id, name, sex_upon_intake
+FROM animal_ins
+WHERE name in ('Lucy', 'Ella', 'Pickle', 'Rogan', 'Sabrina', 'Mitty')
+ORDER BY animal_id;
+```
