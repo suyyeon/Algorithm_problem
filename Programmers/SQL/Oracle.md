@@ -108,3 +108,12 @@ GROUP BY name
     HAVING count(name) > 1
 ORDER BY name;
 ```
+
+### [입양 시각 구하기(1)](https://programmers.co.kr/learn/courses/30/lessons/59412)
+```sql
+SELECT to_char(datetime,'hh24') as "HOUR", count(*) as "count"
+FROM animal_outs
+GROUP BY to_char(datetime,'hh24')
+    HAVING to_char(datetime,'hh24') between '09' and '19'
+ORDER BY HOUR;
+```
