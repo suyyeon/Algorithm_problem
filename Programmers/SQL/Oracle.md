@@ -90,3 +90,21 @@ FROM animal_ins
 WHERE name in ('Lucy', 'Ella', 'Pickle', 'Rogan', 'Sabrina', 'Mitty')
 ORDER BY animal_id;
 ```
+
+# GROUP BY
+### [고양이와 개는 몇 마리 있을까](https://programmers.co.kr/learn/courses/30/lessons/59040)
+```sql
+SELECT animal_type, count(*)
+FROM animal_ins
+GROUP BY animal_type
+ORDER BY animal_type;
+```
+
+### [동명 동물 수 찾기](https://programmers.co.kr/learn/courses/30/lessons/59041)
+```sql
+SELECT name,count(name)
+FROM animal_ins
+GROUP BY name
+    HAVING count(name) > 1
+ORDER BY name;
+```
