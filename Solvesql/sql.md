@@ -1,3 +1,16 @@
+# SELECT
+### [모든 데이터 조회하기](https://solvesql.com/problems/select-all/)
+```sql
+select *
+from points;
+```
+### [일부 데이터 조회하기](https://solvesql.com/problems/select-where/)
+```sql
+select *
+from points
+where quartet = 'I';
+```
+
 # GROUP BY
 ### [레스토랑 웨이터의 팁 분석](https://solvesql.com/problems/tip-analysis/)
 ```sql
