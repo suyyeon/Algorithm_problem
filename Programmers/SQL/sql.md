@@ -117,3 +117,14 @@ GROUP BY to_char(datetime,'hh24')
     HAVING to_char(datetime,'hh24') between '09' and '19'
 ORDER BY HOUR;
 ```
+
+# JOIN
+### [없어진 기록 찾기](https://programmers.co.kr/learn/courses/30/lessons/59042)
+```sql
+-- 보호소에 들어온 기록이 없는!
+select o.animal_id, o.name
+from animal_ins i
+    right outer join animal_outs o
+        on i.animal_id = o.animal_id
+            where i.animal_id is null;
+```
