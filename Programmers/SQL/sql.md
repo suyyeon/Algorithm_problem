@@ -128,3 +128,9 @@ from animal_ins i
         on i.animal_id = o.animal_id
             where i.animal_id is null;
 ```
+> 차집합(MINUS) 코드로도 가능
+```sql
+select animal_id,name from animal_outs
+MINUS
+select animal_id,name from animal_ins;
+```
