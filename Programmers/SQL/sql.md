@@ -134,3 +134,14 @@ select animal_id,name from animal_outs
 MINUS
 select animal_id,name from animal_ins;
 ```
+
+### [있었는데요 없었습니다](https://programmers.co.kr/learn/courses/30/lessons/59043)
+> order by 주의
+```sql
+select i.animal_id, i.name
+from animal_ins i
+    inner join animal_outs o
+        on i.animal_id = o.animal_id
+            where i.datetime > o.datetime
+                order by i.datetime;
+```
